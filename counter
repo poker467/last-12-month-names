@@ -1,0 +1,7 @@
+<?php 
+for ($i=0;$i<12;$i++) {
+${"month" . $i}= new DateTime('now');
+${"month" . $i}->modify('-' . "$i" . ' month');
+${"month" . $i} = ${"month" . $i}->format('F');
+}
+?>
